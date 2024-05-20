@@ -1,0 +1,66 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <section>
+                <div class="header">
+                    <img src="images/burger.jpeg">
+                    <div class="img-text">
+                        <h1> Jimmy's diner </h1>
+                        <p>The best burgers and pizzas in town.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="menu" id= "menu-el">
+                    <div class="menu-items">
+                        <p class="menu-icon">🍕</p>
+                        <div class="item-description">
+                            <h1>Pizza</h1>
+                            <p>pepperoni , mushrom , mozarella </p>
+                            <h3>$14</h3>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-plus add-item"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="order-summary" id="order-summary">
+                    <h1> Your Order </h1>
+                    <div class="order-list" id="order-el">
+                       <!-- <div class="order-item">
+                           <p class="item-name">Pizza</p>
+                           <button class="item-remove"> remove</button>
+                           <p class="item-price"> $14 </p> 
+                       </div> -->
+                    </div>
+                    <div class="order-total">
+                        <h1> Total Price </h1>
+                        <h3 id = "price-el"> $26 </h3>
+                    </div>
+                    <button class="order" id="order-btn"> Complete Order </button>
+                </div>
+            </section>
+        </main>
+        <div class="modal hidden" id="modal-el">
+            <h2> Enter Your Details </h2>
+            <form id= "payment-form">
+                <input type="text" placeholder="Enter Your Name" required/>
+                <input type="number" placeholder="Enter Card Number" required >
+                <input type="number" placeholder="Enter CVV" required >
+                <button type="submit" class="pay-order" id="pay-btn"> Pay </button>
+            </form>
+        </div>
+	<script src="index.js" type= "module" ></script>
+    </body>
+</html>
+

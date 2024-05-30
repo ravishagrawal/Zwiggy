@@ -39,9 +39,10 @@ function generateMenuHtml () {
                     <h1>${meArr.name}</h1>
                     <p>${meArr.ingredients.join(', ')}</p>
                     <h3>$${meArr.price}</h3>
+                    <i class="fa-solid fa-plus add-item" data-add ="${meArr.id}"></i>
                 </div>
                 <div>
-                    <i class="fa-solid fa-plus add-item" data-add ="${meArr.id}"></i>
+                   
                 </div>
             </div>
            `
